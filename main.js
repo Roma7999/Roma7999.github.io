@@ -6,19 +6,42 @@
                 columnWidth: 100
             }
         });
-        var filter_select_el = document.getElementById('filter');
-        var items_el = document.getElementById('items');
-
-        filter_select_el.onchange = function() {
-            console.log(this.value);
-            var items = items_el.getElementsByClassName('item');
-            for (var i=0; i<items.length; i++) {
-                if (items[i].classList.contains(this.value)) {
-                    items[i].style.display = 'block';
-                } else {
-                    items[i].style.display = 'none';
+        var $grid = $('.grid').isotope({
+            itemSelector: '.element-item',
+            layoutMode: 'fitRows',
+            getSortData: {
+                name: '.name',
+                symbol: '.symbol',
+                number: '.number parseInt',
+                category: '[data-category]',
+                weight: function( itemElem ) {
+                    var weight = $( itemElem ).find('.weight').text();
+                    return parseFloat( weight.replace( /[\(\)]/g, '') );
                 }
             }
+        });
+
+// filter functions
+        var filterFns = {
+            // show if number is greater than 50
+            numberGreaterThan50: function() {
+                var number = $(this).find('.number').text();
+                return parseInt( number, 10 ) > 50;
+            },
+            // show if name ends with -ium
+            ium: function() {
+                var name = $(this).find('.name').text();
+                return name.match( /ium$/ );
+            }
         };
+
+// bind filter button click
+        $('#filters').on( 'click', 'button', function() {
+            var filterValue = $( this ).attr('data-filter');
+            // use filterFn if matches value
+            filterValue = filterFns[ filterValue ] || filterValue;
+            $grid.isotope({ filter: filterValue });
+        });
+
     });
 })(jQuery);

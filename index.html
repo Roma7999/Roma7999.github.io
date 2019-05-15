@@ -32,14 +32,20 @@
     <button type="submit" class="mes">mes travaux</button></div>
 </section>
 <section class="two">
-    <label>
-        <select class="but" id="filter">
-            <option class="button-r" value="all">All Photo</option>
-            <option class="button-r" value="design">Web design</option>
-            <option class="button-r" value="front">Front-end</option>
-            <option class="button-r" value="back">Back-end</option>
-        </select>
-    </label>
+    <!--<label>-->
+        <!--<select class="but" id="filter">-->
+            <!--<option class="button-r" value="all">All Photo</option>-->
+            <!--<option class="button-r" value="design">Web design</option>-->
+            <!--<option class="button-r" value="front">Front-end</option>-->
+            <!--<option class="button-r" value="back">Back-end</option>-->
+        <!--</select>-->
+    <!--</label>-->
+    <div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">SHOW ALL</button>
+        <button class="button" data-filter=".design">DESIGN</button>
+        <button class="button" data-filter=".front">FRONT-END</button>
+        <button class="button" data-filter=".back">BACK-END</button>
+    </div>
+
     <div class="grid table" id="items" >
         <div>
             <img class="item design grid-item" src="images/1img.png" alt="">

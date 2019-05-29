@@ -1,47 +1,24 @@
-;(function ($) {
-    $(function () {
-        $('.grid').isotope({
-            itemSelector: '.grid-item',
-            masonry: {
-                columnWidth: 100
-            }
-        });
-        var $grid = $('.grid').isotope({
-            itemSelector: '.element-item',
-            layoutMode: 'fitRows',
-            getSortData: {
-                name: '.name',
-                symbol: '.symbol',
-                number: '.number parseInt',
-                category: '[data-category]',
-                weight: function( itemElem ) {
-                    var weight = $( itemElem ).find('.weight').text();
-                    return parseFloat( weight.replace( /[\(\)]/g, '') );
-                }
-            }
-        });
-
-// filter functions
-        var filterFns = {
-            // show if number is greater than 50
-            numberGreaterThan50: function() {
-                var number = $(this).find('.number').text();
-                return parseInt( number, 10 ) > 50;
-            },
-            // show if name ends with -ium
-            ium: function() {
-                var name = $(this).find('.name').text();
-                return name.match( /ium$/ );
-            }
-        };
-
-// bind filter button click
-        $('#filters').on( 'click', 'button', function() {
-            var filterValue = $( this ).attr('data-filter');
-            // use filterFn if matches value
-            filterValue = filterFns[ filterValue ] || filterValue;
-            $grid.isotope({ filter: filterValue });
-        });
-
+$(document).ready(function() {
+    var $menu = $(".nav");
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $menu.addClass("fixed");
+        } else if ($(this).scrollTop() <= 200 && $menu.hasClass("fixed")) {
+            $menu.removeClass("fixed");
+        }
     });
-})(jQuery);
+        $(function () {
+            var hamburger = $('.hamburger'),
+                nav = $('nav');
+            hamburger.on('click', function () {
+                nav.toggleClass('opened');
+                $(this).toggleClass('active');
+            });
+            $(window).on('resize', function () {
+                if ($(this).width() > 640) {
+                    nav.removeClass('opened');
+                    hamburger.removeClass('active');
+                }
+            });
+        });
+    })(jQuery);

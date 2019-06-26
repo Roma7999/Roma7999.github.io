@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<section class="background">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+            <a class="logo navbar-brand" href="index.html">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="catalog.html">CATALOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bedroom.html">BEDROOM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="livingroom.html">LIVINGROOM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="img/search.png" alt=""></button>
+                </form>
+                <a class="a-basket" href="javascript:void(0);">
+                    <img class="basket" src="img/Basket.png" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="sl-block">
+                    <div class="mobile">
+                        <h1 class="h1-slider">bedroom lamp</h1>
+                        <h2 class="h2-slider">autumn discounts</h2>
+                        <p class="p-sl">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <button class="slide-more" type="submit">MORE</button>
+                    </div>
+                    <div id="anim">
+                        <img class="sale block-anim" src="img/30%25.png" alt="">
+                        <img class="slide-img-w" src="img/Sale.png" alt=""></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="sl-block">
+                    <div>
+                        <h1 class="h1-slider">bedroom lamp</h1>
+                        <h2 class="h2-slider">autumn discounts</h2>
+                        <p class="p-sl">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <button class="slide-more" type="submit">MORE</button>
+                    </div>
+                    <div>
+                        <img class="sale" src="img/30%25.png" alt="">
+                        <img class="slide-img-w" src="img/Sale.png" alt=""></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="sl-block">
+                    <div>
+                        <h1 class="h1-slider">bedroom lamp</h1>
+                        <h2 class="h2-slider">autumn discounts</h2>
+                        <p class="p-sl">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <button class="slide-more" type="submit">MORE</button>
+                    </div>
+                    <div>
+                        <img class="sale" src="img/30%25.png" alt="">
+                        <img class="slide-img-w" src="img/Sale.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<section class="two">
+    <h2 class="font-size">featured product</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col block-size col-xl-5">
+                <div class="content-bg">
+                    <img class="image-center" src="img/1-block.png" alt=""></div>
+                <div class="mini-block-width item_box" id="products">
+                    <div class="info" data-id="1" data-name="Product-1" data-price="25.00">
+                        <h1 class="item_title">Summer Dress</h1>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin </p>
+                    </div>
+                    <div class="margin-left">
+                        <span class="font-sz pad-right">quantity:</span>
+                            <button class="quantity-arrow-minus">-</button>
+                            <input class="quantity-num" type="text" min="1" max="9" step="1" value="1">
+                            <button class="quantity-arrow-plus">+</button>
+                    </div>
+                    <div class="color">
+                        <span class="font-sz">chose color:</span>
+
+                            <div class="radio-toolbar-one">
+                                <form>
+                                <input type="radio" id="radio1" name="radios-one" value="green" checked>
+                                <label for="radio1" class="green"></label>
+
+                                <input type="radio" id="radio2" name="radios-one" value="blue">
+                                <label for="radio2" class="blue"></label>
+
+                                <input type="radio" id="radio3" name="radios-one" value="red">
+                                <label for="radio3" class="red"></label>
+                                </form>
+                            </div>
+                    </div>
+                    <div class="dollar margin-dollar">$<span class="item_price">23</span></div>
+                    <button class="add_item" data-id="2" data-name="Summer Dress" data-price="23" data-quantity="1" data-img="img/1-block.png" type="submit">buy</button>
+                </div>
+            </div>
+            <div class="col block-size col-xl-5">
+                <div class="content-bg">
+                    <img class="image-center" src="img/3-block.png" alt=""></div>
+                <div class="mini-block-width">
+                    <div class="info">
+                        <h1>Summer Dress</h1>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin </p>
+                    </div>
+                    <div class="margin-left">
+                        <span class="font-sz pad-right">quantity:</span>
+                            <button class="quantity-arrow-minus">-</button>
+                            <input class="quantity-num" type="text" min="1" max="9" step="1" value="1">
+                            <button class="quantity-arrow-plus">+</button>
+                    </div>
+                    <div class="color">
+                        <span class="font-sz">chose color:</span>
+
+                        <div class="radio-toolbar-one">
+                            <form>
+                                <input type="radio" id="radio4" name="radios-one" value="green" checked>
+                                <label for="radio4" class="green"></label>
+
+                                <input type="radio" id="radio5" name="radios-one" value="blue">
+                                <label for="radio5" class="blue"></label>
+
+                                <input type="radio" id="radio6" name="radios-one" value="red">
+                                <label for="radio6" class="red"></label>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="dollar margin-dollar"><span>$</span>23</div>
+                    <button type="submit">buy</button>
+                </div>
+                </div>
+                </div>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col block-size col-xl-5">
+                    <div class="content-bg">
+                        <img class="image-center" src="img/2-block.png" alt=""></div>
+                    <div class="mini-block-width">
+                        <div class="info">
+                        <h1>Summer Dress</h1>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin </p>
+                    </div>
+                        <div class="margin-left">
+                            <span class="font-sz pad-right">quantity:</span>
+                                <button class="quantity-arrow-minus">-</button>
+                                <input class="quantity-num" type="text" min="1" max="9" step="1" value="1">
+                                <button class="quantity-arrow-plus">+</button>
+                        </div>
+                        <div class="color">
+                            <span class="font-sz">chose color:</span>
+
+                            <div class="radio-toolbar-one">
+                                <form>
+                                    <input type="radio" id="radio7" name="radios-one" value="green" checked>
+                                    <label for="radio7" class="green"></label>
+
+                                    <input type="radio" id="radio8" name="radios-one" value="blue">
+                                    <label for="radio8" class="blue"></label>
+
+                                    <input type="radio" id="radio9" name="radios-one" value="red">
+                                    <label for="radio9" class="red"></label>
+                                </form>
+                            </div>
+                        </div>
+                    <div class="dollar margin-dollar"><span>$</span>23</div>
+                        <button type="submit">buy</button>
+                    </div>
+                </div>
+                <div class="col block-size col-xl-5">
+                    <div class="content-bg">
+                        <img class="image-center" src="img/4-block.png" alt=""></div>
+                    <div class="mini-block-width">
+                        <div class="info">
+                        <h1>Summer Dress</h1>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin </p>
+                    </div>
+                        <div class="margin-left">
+                            <span class="font-sz pad-right">quantity:</span>
+                                <button class="quantity-arrow-minus">-</button>
+                                <input class="quantity-num" type="text" min="1" max="9" step="1" value="1">
+                                <button class="quantity-arrow-plus">+</button>
+                        </div>
+                        <div class="color">
+                            <span class="font-sz">chose color:</span>
+
+                            <div class="radio-toolbar-one">
+                                <form>
+                                    <input type="radio" id="radio10" name="radios-one" value="green" checked>
+                                    <label for="radio10" class="green"></label>
+
+                                    <input type="radio" id="radio11" name="radios-one" value="blue">
+                                    <label for="radio11" class="blue"></label>
+
+                                    <input type="radio" id="radio12" name="radios-one" value="red">
+                                    <label for="radio12" class="red"></label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="dollar margin-dollar"><span>$</span>23</div>
+                        <button type="submit">buy</button>
+                    </div>
+                </div>
+                    </div>
+                </div>
+    <div class="catalog">
+        <a href="catalog.html">
+            <button type="submit">CATALOG</button>
+        </a>
+    </div>
+</section>
+
+<section class="three">
+    <h1 class="discount">discounted products</h1>
+    <div id="carouselExampleIndicators-2" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators carousel-position">
+            <li data-target="#carouselExampleIndicators-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators-2" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators-2" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col block-size col-xl-5">
+                            <div class="content-bg">
+                                <img class="image-center" src="img/1-block.png" alt=""></div>
+                            <div class="mini-block-width">
+                                <div class="info">
+                                    <h1>Summer Dress</h1>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin </p>
+                                </div>
+                                <div class="margin-left">
+                                    <span class="font-sz pad-right">quantity:</span>
+                                    <button class="quantity-arrow-minus">-</button>
+                                    <input class="quantity-num" type="text" min="1" max="9" step="1" value="1">
+                                    <button class="quantity-arrow-plus">+</button>
+                                </div>
+                                <div class="color">
+                                    <span class="font-sz">chose color:</span>
+
+                                    <div class="radio-toolbar-one">
+                                        <form>
+                                            <input type="radio" id="radio13" name="radios-one" value="green" checked>
+                                            <label for="radio13" class="green"></label>
+
+                                            <input type="radio" id="radio14" name="radios-one" value="blue">
+                                            <label for="radio14" class="blue"></label>
+
+                                            <input type="radio" id="radio15" name="radios-one" value="red">
+                                            <label for="radio15" class="red"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="dollar margin-dollar"><span class="grey">$25</span><span>$23</span></div>
+                                <button type="submit">buy</button>
+                            </div>
+                        </div>
+                        <div class="col block-size col-xl-5">
+                            <div class="content-bg">
+                                <img class="image-center" src="img/3-block.png" alt=""></div>
+                            <div class="mini-block-width">
+                                <div class="info">
+                                    <h1>Summer Dress</h1>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin </p>
+                                </div>
+                                <div class="margin-left">
+                                    <span class="font-sz pad-right">quantity:</span>
+                                    <button class="quantity-arrow-minus">-</button>
+                                    <input class="quantity-num" type="text" min="1" max="9" step="1" value="1">
+                                    <button class="quantity-arrow-plus">+</button>
+                                </div>
+                                <div class="color">
+                                    <span class="font-sz">chose color:</span>
+
+                                    <div class="radio-toolbar-one">
+                                        <form>
+                                            <input type="radio" id="radio16" name="radios-one" value="green" checked>
+                                            <label for="radio16" class="green"></label>
+
+                                            <input type="radio" id="radio17" name="radios-one" value="blue">
+                                            <label for="radio17" class="blue"></label>
+
+                                            <input type="radio" id="radio18" name="radios-one" value="red">
+                                            <label for="radio18" class="red"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="dollar margin-dollar"><span class="grey">$25</span><span>$23</span></div>
+                                <button type="submit">buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col block-size col-xl-5">
+                            <div class="content-bg">
+                                <img class="image-center" src="img/2-block.png" alt=""></div>
+                            <div class="mini-block-width">
+                                <div class="info">
+                                    <h1>Summer Dress</h1>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin </p>
+                                </div>
+                                <div class="margin-left">
+                                    <span class="font-sz pad-right">quantity:</span>
+                                    <button class="quantity-arrow-minus">-</button>
+                                    <input class="quantity-num" type="text" min="1" max="9" step="1" value="1">
+                                    <button class="quantity-arrow-plus">+</button>
+                                </div>
+                                <div class="color">
+                                    <span class="font-sz">chose color:</span>
+
+                                    <div class="radio-toolbar-one">
+                                        <form>
+                                            <input type="radio" id="radio19" name="radios-one" value="green" checked>
+                                            <label for="radio19" class="green"></label>
+
+                                            <input type="radio" id="radio20" name="radios-one" value="blue">
+                                            <label for="radio20" class="blue"></label>
+
+                                            <input type="radio" id="radio21" name="radios-one" value="red">
+                                            <label for="radio21" class="red"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="dollar margin-dollar"><span class="grey">$25</span><span>$23</span></div>
+                                <button type="submit">buy</button>
+                            </div>
+                        </div>
+                        <div class="col block-size col-xl-5">
+                            <div class="content-bg">
+                                <img class="image-center" src="img/4-block.png" alt=""></div>
+                            <div class="mini-block-width">
+                                <div class="info">
+                                    <h1>Summer Dress</h1>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin </p>
+                                </div>
+                                <div class="margin-left">
+                                    <span class="font-sz pad-right">quantity:</span>
+                                    <button class="quantity-arrow-minus">-</button>
+                                    <input class="quantity-num" type="text" min="1" max="9" step="1" value="1">
+                                    <button class="quantity-arrow-plus">+</button>
+                                </div>
+                                <div class="color">
+                                    <span class="font-sz">chose color:</span>
+
+                                    <div class="radio-toolbar-one">
+                                        <form>
+                                            <input type="radio" id="radio22" name="radios-one" value="green" checked>
+                                            <label for="radio22" class="green"></label>
+
+                                            <input type="radio" id="radio23" name="radios-one" value="blue">
+                                            <label for="radio23" class="blue"></label>
+
+                                            <input type="radio" id="radio24" name="radios-one" value="red">
+                                            <label for="radio24" class="red"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="dollar margin-dollar"><span class="grey">$25</span><span>$23</span></div>
+                                <button type="submit">buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col block-size col-xl-5">
+                            <div class="content-bg">
+                                <img class="image-center add-margin" src="img/block-slide-1.png" alt=""></div>
+                            <div class="mini-block-width">
+                                <div class="info">
+                                    <h1>Summer Dress</h1>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin </p>
+                                </div>
+                                <div class="margin-left">
+                                    <span class="font-sz pad-right">quantity:</span>
+                                    <button class="quantity-arrow-minus">-</button>
+                                    <input class="quantity-num" type="text" min="1" max="9" step="1" value="1">
+                                    <button class="quantity-arrow-plus">+</button>
+                                </div>
+                                <div class="color">
+                                    <span class="font-sz">chose color:</span>
+
+                                    <div class="radio-toolbar-one">
+                                        <form>
+                                            <input type="radio" id="radio25" name="radios-one" value="green" checked>
+                                            <label for="radio25" class="green"></label>
+
+                                            <input type="radio" id="radio26" name="radios-one" value="blue">
+                                            <label for="radio26" class="blue"></label>
+
+                                            <input type="radio" id="radio27" name="radios-one" value="red">
+                                            <label for="radio27" class="red"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="dollar margin-dollar"><span class="grey">$25</span><span>$23</span></div>
+                                <button type="submit">buy</button>
+                            </div>
+                        </div>
+                        <div class="col block-size col-xl-5">
+                            <div class="content-bg">
+                                <img class="image-center add-mt" src="img/block-slide-2.png" alt=""></div>
+                            <div class="mini-block-width">
+                                <div class="info">
+                                    <h1>Summer Dress</h1>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin </p>
+                                </div>
+                                <div class="margin-left">
+                                    <span class="font-sz pad-right">quantity:</span>
+                                    <button class="quantity-arrow-minus">-</button>
+                                    <input class="quantity-num" type="text" min="1" max="9" step="1" value="1">
+                                    <button class="quantity-arrow-plus">+</button>
+                                </div>
+                                <div class="color">
+                                    <span class="font-sz">chose color:</span>
+
+                                    <div class="radio-toolbar-one">
+                                        <form>
+                                            <input type="radio" id="radio28" name="radios-one" value="green" checked>
+                                            <label for="radio28" class="green"></label>
+
+                                            <input type="radio" id="radio29" name="radios-one" value="blue">
+                                            <label for="radio29" class="blue"></label>
+
+                                            <input type="radio" id="radio30" name="radios-one" value="red">
+                                            <label for="radio30" class="red"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="dollar margin-dollar"><span class="grey">$25</span><span>$23</span></div>
+                                <button type="submit">buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev arrow-margin" href="#carouselExampleIndicators-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next arrow-margin" href="#carouselExampleIndicators-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+<section class="four">
+    <div class="container">
+        <div class="row padding-top">
+            <div class="col-xl-4 w-block">
+                <div class="info-block">
+                    <img class="img-w" src="img/Class.png" alt="">
+                <h4 class="fsz-margin">Italian quality</h4>
+                <p class="width-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                    <div class="img-link pad-top">
+                        <a href="">
+                            <img class="img-width" src="img/accesories-a.png" alt="">
+                        </a>
+                        <a href="">
+                            <img class="img-width" src="img/free%20shipping%20worldwide-a.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 w-block">
+                <div class="info-block ">
+                    <img class="img-w" src="img/piggy-bank.png" alt="">
+                <h4 class="fsz-margin">Sensible savings</h4>
+                <p class="width-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <div class="img-link add-padding">
+                        <a href="">
+                            <img class="img-width p-t" src="img/collection-a.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 w-block margin-f-top">
+                <div class="info-block">
+                    <img class="img-w marg-top" src="img/furniture.png" alt="">
+                <h4 class="fsz-margin h4-marg">Italian quality</h4>
+                <p class="width-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <div class="img-link">
+                        <a href="">
+                            <img class="img-width image-pad" src="img/furniture-a.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>OUR TEAM</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 info-me-width">
+                <img class="image-block" src="img/First-Roman.png" alt="">
+                <h4 class="fsz-name-h4">Roman Bondarenko</h4>
+                <h5 class="fsz-color-h5">Designer</h5>
+                <p class="info-me">It is a long established fact that a reader will be distracted by the readable content of a page when </p>
+            </div>
+            <div class="col-xl-4 info-me-width">
+                <img class="image-block" src="img/Two-Roman.png" alt="">
+                <h4 class="fsz-name-h4">Roman Bondarenko</h4>
+                <h5 class="fsz-color-h5">Designer</h5>
+                <p class="info-me">It is a long established fact that a reader will be distracted by the readable content of a page when </p>
+            </div>
+            <div class="col-xl-4 info-me-width">
+                <img class="image-block" src="img/Three-Roman.png" alt="">
+                <h4 class="fsz-name-h4">Roman Bondarenko</h4>
+                <h5 class="fsz-color-h5">Designer</h5>
+                <p class="info-me">It is a long established fact that a reader will be distracted by the readable content of a page when </p>
+            </div>
+        </div>
+    </div>
+    <h1 class="partners-fsz">PARTNERS</h1>
+    <div class="col-xl-12 db">
+        <img class="mr-left" src="img/first-image.png" alt="">
+        <img class="mr-left" src="img/two-image.png" alt="">
+        <img class="mr-left" src="img/three-image.png" alt="">
+        <img class="mr-left" src="img/four-image.png" alt="">
+        <img class="mr-left" src="img/five-image.png" alt="">
+        <img class="mr-left" src="img/six-image.png" alt="">
+    </div>
+</section>
+
+<section class="five">
+    <div class="container cont-mr">
+        <div class="row pt-bottom">
+            <div class="col-xl-7 col-md-5 col-6 h-mini-block bg-img">
+                <img class="img-position" src="img/new-collection.png" alt="">
+               <button class="new-col-button" type="submit">MORE</button>
+            </div>
+            <div class="col-xl-4 h-mini-block em-block">
+                <h3 class="text-t">subscribe to news</h3>
+                <p class="p-width">Subscribe to our email newsletter & receive updates right in your inbox.</p>
+                <label class="center">
+                    <input class="mail" type="email" placeholder="     Your E-mail">
+                    <button class="send" type="submit">SEND</button>
+                </label>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="six">
+    <div class="container">
+        <div class="row footer-pad">
+            <div class="col-xl-2 mr-none">
+            </div>
+                <div class="col-xl-1 mr-none">
+                </div>
+            <div class="col-xl-3 mr-none">
+            <div class="col-xl-1 mr-none">
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-2 mx-auto logo-bot">
+                    <div class="mr-none logo-pad">
+                        <a href="">
+                            <span class="logo ">LOGO</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 mx-auto f-footer-nav">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="footer" href="javascript:void(0);">Products</a>
+                        </li>
+                        <li>
+                            <a class="footer" href="javascript:void(0);">Quality</a>
+                        </li>
+                        <li>
+                            <a class="footer" href="javascript:void(0);">Projects</a>
+                        </li>
+                        <li>
+                            <a class="footer" href="javascript:void(0);">Where to buy?</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-2 mx-auto f-2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="footer" href="javascript:void(0);">Online store</a>
+                        </li>
+                        <li>
+                            <a class="footer" href="javascript:void(0);">About company</a>
+                        </li>
+                        <li>
+                            <a class="footer" href="javascript:void(0);">For partners</a>
+                        </li>
+                        <li>
+                            <a class="footer" href="javascript:void(0);">News</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-2 mx-auto f-3">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="footer" href="javascript:void(0);">Contacts</a>
+                        </li>
+                        <li>
+                            <a class="footer" href="javascript:void(0);">Career</a>
+                        </li>
+                        <li>
+                            <a class="footer" href="javascript:void(0);">FAQ</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-2 mx-auto footer-info">
+                    <div>
+                        <div><p class="contact-us">Contacts us:</p>
+                            <p>+38(044)123-4567</p>
+                            <p>+38(044)123-4567</p>
+                        </div>
+                        <div><p class="fw">Email:<span class="info-email">info_lamp@mail.com</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mx-auto nav-top">
+                    <a class="nav" href="">
+                        <span class="arrow"></span>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2018 Copyright: by ROMAN
+        </div>
+    </footer>
+</section>
+
+<script src="js/jquery-3.4.0.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -2063,5 +2063,8 @@ div > img.sale {
     }
   }
 }
+.nav {
+  border-radius: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1903,5 +1903,165 @@ div > img.sale {
     animation-duration: 0.5ms;
   }
 }
+@media (max-width: 1024px) {
+  div > img.sale {
+    animation: anim 0.5ms;
+    animation-duration: 5s;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 140px;
+    left: 600px;
+  }
+
+  @keyframes anim {
+    0% {
+      left: -100%;
+    }
+    10% {
+      transform: rotate(90deg);
+      left: -90%;
+      animation-duration: 0.5ms;
+    }
+    20% {
+      transform: rotate(180deg);
+      left: -80%;
+      animation-duration: 0.5ms;
+    }
+    30% {
+      transform: rotate(360deg);
+      left: -70%;
+      animation-duration: 0.5ms;
+    }
+  }
+}
+@media (max-width: 768px) {
+  div > img.sale {
+    animation: anim 0.5ms;
+    animation-duration: 5s;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+  }
+
+  @keyframes anim {
+    0% {
+      left: -100%;
+    }
+    10% {
+      transform: rotate(90deg);
+      left: -90%;
+      animation-duration: 0.5ms;
+    }
+    20% {
+      transform: rotate(180deg);
+      left: -80%;
+      animation-duration: 0.5ms;
+    }
+    30% {
+      transform: rotate(360deg);
+      left: -70%;
+      animation-duration: 0.5ms;
+    }
+  }
+}
+@media (max-width: 425px) {
+  div > img.sale {
+    animation: anim 0.5ms;
+    animation-duration: 5s;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 70px;
+    left: 230px;
+  }
+
+  @keyframes anim {
+    0% {
+      left: -100%;
+    }
+    10% {
+      transform: rotate(90deg);
+      left: -90%;
+      animation-duration: 0.5ms;
+    }
+    20% {
+      transform: rotate(180deg);
+      left: -80%;
+      animation-duration: 0.5ms;
+    }
+    30% {
+      transform: rotate(360deg);
+      left: -70%;
+      animation-duration: 0.5ms;
+    }
+  }
+}
+@media (max-width: 375px) {
+  div > img.sale {
+    animation: anim 0.5ms;
+    animation-duration: 5s;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 70px;
+    left: 190px;
+  }
+
+  @keyframes anim {
+    0% {
+      left: -100%;
+    }
+    10% {
+      transform: rotate(90deg);
+      left: -90%;
+      animation-duration: 0.5ms;
+    }
+    20% {
+      transform: rotate(180deg);
+      left: -80%;
+      animation-duration: 0.5ms;
+    }
+    30% {
+      transform: rotate(360deg);
+      left: -70%;
+      animation-duration: 0.5ms;
+    }
+  }
+}
+@media (max-width: 320px) {
+  div > img.sale {
+    animation: anim 0.5ms;
+    animation-duration: 5s;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 65px;
+    left: 175px;
+  }
+
+  @keyframes anim {
+    0% {
+      left: -100%;
+    }
+    10% {
+      transform: rotate(90deg);
+      left: -90%;
+      animation-duration: 0.5ms;
+    }
+    20% {
+      transform: rotate(180deg);
+      left: -80%;
+      animation-duration: 0.5ms;
+    }
+    30% {
+      transform: rotate(360deg);
+      left: -70%;
+      animation-duration: 0.5ms;
+    }
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
